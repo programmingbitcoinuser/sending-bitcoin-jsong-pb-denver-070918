@@ -220,9 +220,9 @@ class TxIn:
     @classmethod
     def get_url(cls, testnet=False):
         if testnet:
-            return 'https://testnet.blockexplorer.com/api'
+            return 'https://test-insight.bitpay.com/api'
         else:
-            return 'https://btc-bitcore3.trezor.io/api'
+            return 'https://btc.coinquery.com/api'
 
     def fetch_tx(self, testnet=False):
         if self.prev_tx not in self.cache:
